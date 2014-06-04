@@ -10,4 +10,5 @@ requires 'Plack::Builder::Conditionals';
 requires 'Starlet';
 requires 'List::Util';
 requires 'Getopt::Long';
-requires 'Test::Test';
+requires 'Test::TCP';
+

@@ -130,7 +130,7 @@ my $memcached_port = empty_port();
 my $proclet = Proclet->new();
 
 $proclet->service(
-      code => [$memcached,'-U','0','-l','127.0.0.1','-p',$memcached_port],
+      code => [$memcached,'-u','nobody','-U','0','-l','127.0.0.1','-p',$memcached_port],
       tag => 'memcached'
 );
 
